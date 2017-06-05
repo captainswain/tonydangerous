@@ -2,6 +2,6 @@
 (function($) {
 	"use strict";
 	$(function() {
-		$('.the-content').fitVids();	
+		$('.the-content').fitVids();
 	});
 }(jQuery));
