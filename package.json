@@ -1,7 +1,7 @@
 {
-  "name": "less",
+  "name": "Tony Dangerous",
   "version": "2.0.0",
-  "description": "A minimal geek blog theme forked from (https://github.com/alliswell/Less)",
+  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
