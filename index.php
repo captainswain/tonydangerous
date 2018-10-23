@@ -24,14 +24,14 @@
 <header id="masthead" class="site-header" role="banner">
 	<div class="container">
 
-		<div class="gravatar">
-			<?php
+<!-- 		<div class="gravatar"> -->
+<!-- 			<?php
 
 // grab admin email and their photo
-$admin_email = get_option('admin_email');
-echo get_avatar($admin_email, 100);
-?>
-		</div><!--/ author -->
+// $admin_email = get_option('admin_email');
+// echo get_avatar($admin_email, 100);
+;?> -->
+<!-- 		</div>/ author  -->
 
 		<div id="brand">
 			<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name');?></a> &mdash; <span><?php echo get_bloginfo('description'); ?></span></h1>
@@ -63,19 +63,19 @@ if (is_home() || is_archive()) {
 
 				<?php while (have_posts()): the_post();?>
 
-								<article class="post">
+									<article class="post">
 
-									<h1 class="title">
-										<a href="<?php the_permalink();?>" title="<?php the_title();?>">
-											<?php the_title();?>
-										</a>
-									</h1>
-									<div class="post-meta">
-										<?php if (comments_open()): ?>
-											<span class="comments-link">
-												<?php comments_popup_link(__('Comment', 'break'), __('1 Comment', 'break'), __('% Comments', 'break'));?>
-											</span>
-										<?php endif;?>
+										<h1 class="title">
+											<a href="<?php the_permalink();?>" title="<?php the_title();?>">
+												<?php the_title();?>
+											</a>
+										</h1>
+										<div class="post-meta">
+											<?php if (comments_open()): ?>
+												<span class="comments-link">
+													<?php comments_popup_link(__('Comment', 'break'), __('1 Comment', 'break'), __('% Comments', 'break'));?>
+												</span>
+											<?php endif;?>
 
 						</div><!--/post-meta -->
 
@@ -126,15 +126,15 @@ if (is_single()) {
 
 				<?php while (have_posts()): the_post();?>
 
-								<article class="post">
+									<article class="post">
 
-									<h1 class="title"><?php the_title();?></h1>
-									<div class="post-meta">
-										<?php if (comments_open()): ?>
-											<span class="comments-link">
-												<?php comments_popup_link(__('Comment', 'less'), __('1 Comment', 'less'), __('% Comments', 'less'));?>
-											</span>
-										<?php endif;?>
+										<h1 class="title"><?php the_title();?></h1>
+										<div class="post-meta">
+											<?php if (comments_open()): ?>
+												<span class="comments-link">
+													<?php comments_popup_link(__('Comment', 'less'), __('1 Comment', 'less'), __('% Comments', 'less'));?>
+												</span>
+											<?php endif;?>
 
 						</div><!--/post-meta -->
 
@@ -186,19 +186,19 @@ if (is_page()) {
 
 				<?php while (have_posts()): the_post();?>
 
-								<article class="post">
+									<article class="post">
 
-									<h1 class="title"><?php the_title();?></h1>
+										<h1 class="title"><?php the_title();?></h1>
 
-									<div class="the-content">
-										<?php the_content();?>
+										<div class="the-content">
+											<?php the_content();?>
 
-										<?php wp_link_pages();?>
-									</div><!-- the-content -->
+											<?php wp_link_pages();?>
+										</div><!-- the-content -->
 
-								</article>
+									</article>
 
-							<?php endwhile;?>
+								<?php endwhile;?>
 
 			<?php else: ?>
 
