@@ -63,19 +63,19 @@ if (is_home() || is_archive()) {
 
 				<?php while (have_posts()): the_post();?>
 
-									<article class="post">
+																<article class="post">
 
-										<h1 class="title">
-											<a href="<?php the_permalink();?>" title="<?php the_title();?>">
-												<?php the_title();?>
-											</a>
-										</h1>
-										<div class="post-meta">
-											<?php if (comments_open()): ?>
-												<span class="comments-link">
-													<?php comments_popup_link(__('Comment', 'break'), __('1 Comment', 'break'), __('% Comments', 'break'));?>
-												</span>
-											<?php endif;?>
+																	<h1 class="title">
+																		<a href="<?php the_permalink();?>" title="<?php the_title();?>">
+																			<?php the_title();?>
+																		</a>
+																	</h1>
+																	<div class="post-meta">
+																		<?php if (comments_open()): ?>
+																			<span class="comments-link">
+																				<?php comments_popup_link(__('Comment', 'break'), __('1 Comment', 'break'), __('% Comments', 'break'));?>
+																			</span>
+																		<?php endif;?>
 
 						</div><!--/post-meta -->
 
@@ -126,15 +126,15 @@ if (is_single()) {
 
 				<?php while (have_posts()): the_post();?>
 
-									<article class="post">
+																<article class="post">
 
-										<h1 class="title"><?php the_title();?></h1>
-										<div class="post-meta">
-											<?php if (comments_open()): ?>
-												<span class="comments-link">
-													<?php comments_popup_link(__('Comment', 'less'), __('1 Comment', 'less'), __('% Comments', 'less'));?>
-												</span>
-											<?php endif;?>
+																	<h1 class="title"><?php the_title();?></h1>
+																	<div class="post-meta">
+																		<?php if (comments_open()): ?>
+																			<span class="comments-link">
+																				<?php comments_popup_link(__('Comment', 'less'), __('1 Comment', 'less'), __('% Comments', 'less'));?>
+																			</span>
+																		<?php endif;?>
 
 						</div><!--/post-meta -->
 
@@ -186,19 +186,19 @@ if (is_page()) {
 
 				<?php while (have_posts()): the_post();?>
 
-									<article class="post">
+					<article class="post">
 
-										<h1 class="title"><?php the_title();?></h1>
+						<h1 class="title"><?php the_title();?></h1>
 
-										<div class="the-content">
-											<?php the_content();?>
+						<div class="the-content">
+							<?php the_content();?>
 
-											<?php wp_link_pages();?>
-										</div><!-- the-content -->
+							<?php wp_link_pages();?>
+						</div><!-- the-content -->
 
-									</article>
+					</article>
 
-								<?php endwhile;?>
+				<?php endwhile;?>
 
 			<?php else: ?>
 
@@ -225,7 +225,7 @@ if (is_page()) {
 <footer class="site-footer" role="contentinfo">
 	<div class="site-info container">
 		<?php do_action('break_credits');?>
-		<span class="sep"> Made with ❤️ in Orange, CA</span>
+		<span class="sep">copyright © 2018 Tony Dangerous™</span>
 	</div><!-- .site-info -->
 </footer><!-- #colophon .site-footer -->
 
